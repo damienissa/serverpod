@@ -2,4 +2,4 @@
 // templates/pubspecs directory.
 
 const templateVersion = '1.0.0';
-const productionMode = false;
+const productionMode = true;
