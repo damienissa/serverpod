@@ -8,7 +8,7 @@ description: Command line tools for Serverpod.
 repository: https://github.com/serverpod/serverpod
 
 environment:
-  sdk: '>=2.17.0 <3.0.0'
+  sdk: ">=2.17.0 <3.0.0"
 
 dependencies:
   archive: ^3.1.2
@@ -28,10 +28,16 @@ dependencies:
   path: ^1.8.0
   uuid: ^3.0.5
   yaml: ^3.1.0
-  serverpod_shared: #^1.0.0
-    path: ../../packages/serverpod_shared
-  serverpod_service_client: #^1.0.0
-    path: ../../packages/serverpod_service_client
+  serverpod_shared:
+    git:
+      url: https://github.com/damienissa/serverpod.git
+      ref: v1.1
+      path: packages/serverpod_shared/
+  serverpod_service_client:
+    git:
+      url: https://github.com/damienissa/serverpod.git
+      ref: v1.1
+      path: packages/serverpod_service_client/
 
 dev_dependencies:
   lints: ^2.0.0
