@@ -137,6 +137,8 @@ class DatabaseConfig {
   late final bool isUnixSocket;
 
   DatabaseConfig._(Map dbSetup, Map<String, String> passwords) {
+    print('DB setup: $dbSetup');
+    print('Passwords: $passwords');
     host = dbSetup['host']!;
     port = dbSetup['port']!;
     name = dbSetup['name']!;
